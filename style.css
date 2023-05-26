@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: url(/the-mentalist-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+}
+.logo{
+    width: 150px;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navigation ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+.navigation ul li a:hover{
+    border-bottom: 2px solid #cc3813;
+}
+.navigation .search{
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+.navigation .perfil{
+    width: 40px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+main section .logoMentalist{
+    width: 35em;
+    margin: 3em 0;
+}
+main section .btn-box{
+    display: flex;
+    gap: 20px;
+}
+.btn-box .btn{
+    padding: 20px 45px;
+    background: #0274ff;
+    margin-bottom: 2em;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .3s;
+}
+.btn-box .btn:hover{
+    background: #bd3c09;
+}
+
+main section .text{
+    color: #fff;
+    line-height: 22px;
+}
+.btn-box2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 45px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2em;
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    background: #0f79af;
+    transition: all .3s;
+}
+.btn-box2:hover{
+    background: #138ecc;
+}
+.btn-box2 .play{
+    width: 1.4em;
+    filter: invert(1);
+}
+
+footer {
+    background-color: #0274ff;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* Estilos para tablets com largura de até 768px */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 24px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .navigation ul {
+        gap: 20px;
+    }
+
+    main section {
+        margin-left: 1.5em;
+    }
+
+    main section .logoMentalist {
+        width: 25em;
+        margin: 2em 0;
+    }
+
+    main section .btn-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-box .btn {
+        padding: 15px 35px;
+    }
+
+    main section .text {
+        line-height: 18px;
+    }
+}
+
+/* Estilos para smartphones com largura de até 480px */
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 16px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation .search,
+    .navigation .perfil {
+        width: 30px;
+    }
+
+    .navigation .search {
+        margin-right: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    main section .logoMentalist {
+        width: 20em;
+        margin: 1.5em 0;
+    }
+
+    main section .btn-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-box .btn {
+        padding: 12px 30px;
+        margin-bottom: 1em;
+    }
+
+    .btn-box2 {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
